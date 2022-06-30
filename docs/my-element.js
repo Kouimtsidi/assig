@@ -136,7 +136,7 @@ export class MyElement extends LitElement {
        });
   }
 
-  DeleteTweet(index){
+  deleteTweet(index){
        deleteFromStorage(index).then((e)=>{
         this.tweets.splice(index,1)
         this.postCount--
